@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+.derivedData/
+*.xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+*.moved-aside
+*.xcuserdatad
+
+# SwiftPM
+.build/
+.swiftpm/
+
+# Tuist
+.tuist/
+.tuist-cache/
+
+# Logs
+*.log
+
+# IDEs
+.idea/
+.vscode/
