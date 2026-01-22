@@ -1,12 +1,14 @@
 # CodexSessions
 
-CodexSessions is a macOS/iOS app that indexes Codex CLI session logs (JSONL) and presents them as searchable conversations. It is optimized for very large, append‑only log files and incremental scanning.
+CodexSessions is a macOS/iOS app that indexes Codex CLI session logs (JSONL) and presents them as searchable conversations. It is optimized for very large, append‑only log files and incremental scanning. It also syncs your sessions via iCloud, so there’s no separate auth flow to set up.
+
+This is a kind of silly project, but it’s been useful in practice.
 
 ## Features
 - Incremental JSONL parsing (only reads new bytes).
 - Tail‑only scanning for very large files (configurable).
 - Skips giant single‑line payloads to avoid CPU/memory spikes.
-- Local SwiftData store with optional CloudKit sync.
+- Local SwiftData store with optional CloudKit sync (iCloud, no extra auth).
 - Console status logging for scan progress.
 
 ## How It Works
